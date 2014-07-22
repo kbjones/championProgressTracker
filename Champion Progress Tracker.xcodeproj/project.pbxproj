@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5337AB9B7D4D4856ADEBF424 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E5AE37FA43214C5E8247DC08 /* libPods.a */; };
 		C1A73F43197845B30090AE68 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C1A73F42197845B20090AE68 /* Foundation.framework */; };
 		C1A73F45197845B30090AE68 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C1A73F44197845B30090AE68 /* CoreGraphics.framework */; };
 		C1A73F47197845B30090AE68 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C1A73F46197845B30090AE68 /* UIKit.framework */; };
@@ -22,6 +23,20 @@
 		C1A73F64197845B30090AE68 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C1A73F48197845B30090AE68 /* CoreData.framework */; };
 		C1A73F6C197845B30090AE68 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C1A73F6A197845B30090AE68 /* InfoPlist.strings */; };
 		C1A73F6E197845B30090AE68 /* Champion_Progress_TrackerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C1A73F6D197845B30090AE68 /* Champion_Progress_TrackerTests.m */; };
+		C1A73F7819784C9F0090AE68 /* Storyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C1A73F7719784C9F0090AE68 /* Storyboard.storyboard */; };
+		C1A73F7A19784D0A0090AE68 /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C1A73F7919784D0A0090AE68 /* Social.framework */; };
+		C1A73F7C19784D630090AE68 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C1A73F7B19784D630090AE68 /* MapKit.framework */; };
+		C1A73F7E197851970090AE68 /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C1A73F7D197851970090AE68 /* ImageIO.framework */; };
+		C1A73F80197851C00090AE68 /* AssetsLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C1A73F7F197851C00090AE68 /* AssetsLibrary.framework */; };
+		C1A73F82197852070090AE68 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C1A73F81197852070090AE68 /* QuartzCore.framework */; };
+		C1A73F84197854260090AE68 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C1A73F83197854260090AE68 /* SystemConfiguration.framework */; };
+		C1A73F8C19785F370090AE68 /* file1@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C1A73F8B19785F370090AE68 /* file1@2x.png */; };
+		C1A73F8E19785F6D0090AE68 /* file@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C1A73F8D19785F6D0090AE68 /* file@2x.png */; };
+		C1A73F911978671A0090AE68 /* PTloginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C1A73F901978671A0090AE68 /* PTloginViewController.m */; };
+		C1A73F9419786E4A0090AE68 /* PTprofileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C1A73F9319786E4A0090AE68 /* PTprofileViewController.m */; };
+		C1A73F97197870B80090AE68 /* PTConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = C1A73F96197870B80090AE68 /* PTConstants.m */; };
+		C1A73FA3197D623E0090AE68 /* PTweekViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C1A73FA2197D623E0090AE68 /* PTweekViewController.m */; };
+		C1E6A45E197DA1E100C14C90 /* PTTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C1E6A45D197DA1E100C14C90 /* PTTableViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +50,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		B9EB086A5420418C9C4BF438 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
 		C1A73F3F197845B20090AE68 /* Champion Progress Tracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Champion Progress Tracker.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C1A73F42197845B20090AE68 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		C1A73F44197845B30090AE68 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -53,6 +69,26 @@
 		C1A73F69197845B30090AE68 /* Champion Progress TrackerTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Champion Progress TrackerTests-Info.plist"; sourceTree = "<group>"; };
 		C1A73F6B197845B30090AE68 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		C1A73F6D197845B30090AE68 /* Champion_Progress_TrackerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Champion_Progress_TrackerTests.m; sourceTree = "<group>"; };
+		C1A73F7719784C9F0090AE68 /* Storyboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Storyboard.storyboard; sourceTree = "<group>"; };
+		C1A73F7919784D0A0090AE68 /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
+		C1A73F7B19784D630090AE68 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		C1A73F7D197851970090AE68 /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = System/Library/Frameworks/ImageIO.framework; sourceTree = SDKROOT; };
+		C1A73F7F197851C00090AE68 /* AssetsLibrary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AssetsLibrary.framework; path = System/Library/Frameworks/AssetsLibrary.framework; sourceTree = SDKROOT; };
+		C1A73F81197852070090AE68 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		C1A73F83197854260090AE68 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		C1A73F8B19785F370090AE68 /* file1@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "file1@2x.png"; sourceTree = "<group>"; };
+		C1A73F8D19785F6D0090AE68 /* file@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "file@2x.png"; sourceTree = "<group>"; };
+		C1A73F8F1978671A0090AE68 /* PTloginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PTloginViewController.h; sourceTree = "<group>"; };
+		C1A73F901978671A0090AE68 /* PTloginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PTloginViewController.m; sourceTree = "<group>"; };
+		C1A73F9219786E4A0090AE68 /* PTprofileViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PTprofileViewController.h; sourceTree = "<group>"; };
+		C1A73F9319786E4A0090AE68 /* PTprofileViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PTprofileViewController.m; sourceTree = "<group>"; };
+		C1A73F95197870B80090AE68 /* PTConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PTConstants.h; sourceTree = "<group>"; };
+		C1A73F96197870B80090AE68 /* PTConstants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PTConstants.m; sourceTree = "<group>"; };
+		C1A73FA1197D623E0090AE68 /* PTweekViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PTweekViewController.h; sourceTree = "<group>"; };
+		C1A73FA2197D623E0090AE68 /* PTweekViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PTweekViewController.m; sourceTree = "<group>"; };
+		C1E6A45C197DA1E100C14C90 /* PTTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PTTableViewController.h; sourceTree = "<group>"; };
+		C1E6A45D197DA1E100C14C90 /* PTTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PTTableViewController.m; sourceTree = "<group>"; };
+		E5AE37FA43214C5E8247DC08 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,10 +96,17 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C1A73F84197854260090AE68 /* SystemConfiguration.framework in Frameworks */,
+				C1A73F82197852070090AE68 /* QuartzCore.framework in Frameworks */,
+				C1A73F80197851C00090AE68 /* AssetsLibrary.framework in Frameworks */,
+				C1A73F7E197851970090AE68 /* ImageIO.framework in Frameworks */,
+				C1A73F7C19784D630090AE68 /* MapKit.framework in Frameworks */,
+				C1A73F7A19784D0A0090AE68 /* Social.framework in Frameworks */,
 				C1A73F45197845B30090AE68 /* CoreGraphics.framework in Frameworks */,
 				C1A73F49197845B30090AE68 /* CoreData.framework in Frameworks */,
 				C1A73F47197845B30090AE68 /* UIKit.framework in Frameworks */,
 				C1A73F43197845B30090AE68 /* Foundation.framework in Frameworks */,
+				5337AB9B7D4D4856ADEBF424 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -88,6 +131,7 @@
 				C1A73F67197845B30090AE68 /* Champion Progress TrackerTests */,
 				C1A73F41197845B20090AE68 /* Frameworks */,
 				C1A73F40197845B20090AE68 /* Products */,
+				B9EB086A5420418C9C4BF438 /* Pods.xcconfig */,
 			);
 			sourceTree = "<group>";
 		};
@@ -103,11 +147,18 @@
 		C1A73F41197845B20090AE68 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				C1A73F83197854260090AE68 /* SystemConfiguration.framework */,
+				C1A73F81197852070090AE68 /* QuartzCore.framework */,
+				C1A73F7F197851C00090AE68 /* AssetsLibrary.framework */,
+				C1A73F7D197851970090AE68 /* ImageIO.framework */,
+				C1A73F7B19784D630090AE68 /* MapKit.framework */,
+				C1A73F7919784D0A0090AE68 /* Social.framework */,
 				C1A73F42197845B20090AE68 /* Foundation.framework */,
 				C1A73F44197845B30090AE68 /* CoreGraphics.framework */,
 				C1A73F46197845B30090AE68 /* UIKit.framework */,
 				C1A73F48197845B30090AE68 /* CoreData.framework */,
 				C1A73F60197845B30090AE68 /* XCTest.framework */,
+				E5AE37FA43214C5E8247DC08 /* libPods.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -117,6 +168,17 @@
 			children = (
 				C1A73F53197845B30090AE68 /* PTAppDelegate.h */,
 				C1A73F54197845B30090AE68 /* PTAppDelegate.m */,
+				C1A73F7719784C9F0090AE68 /* Storyboard.storyboard */,
+				C1E6A45C197DA1E100C14C90 /* PTTableViewController.h */,
+				C1E6A45D197DA1E100C14C90 /* PTTableViewController.m */,
+				C1A73FA1197D623E0090AE68 /* PTweekViewController.h */,
+				C1A73FA2197D623E0090AE68 /* PTweekViewController.m */,
+				C1A73F8F1978671A0090AE68 /* PTloginViewController.h */,
+				C1A73F901978671A0090AE68 /* PTloginViewController.m */,
+				C1A73F9219786E4A0090AE68 /* PTprofileViewController.h */,
+				C1A73F9319786E4A0090AE68 /* PTprofileViewController.m */,
+				C1A73F95197870B80090AE68 /* PTConstants.h */,
+				C1A73F96197870B80090AE68 /* PTConstants.m */,
 				C1A73F59197845B30090AE68 /* Images.xcassets */,
 				C1A73F56197845B30090AE68 /* Champion_Progress_Tracker.xcdatamodeld */,
 				C1A73F4B197845B30090AE68 /* Supporting Files */,
@@ -127,6 +189,8 @@
 		C1A73F4B197845B30090AE68 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				C1A73F8D19785F6D0090AE68 /* file@2x.png */,
+				C1A73F8B19785F370090AE68 /* file1@2x.png */,
 				C1A73F4C197845B30090AE68 /* Champion Progress Tracker-Info.plist */,
 				C1A73F4D197845B30090AE68 /* InfoPlist.strings */,
 				C1A73F50197845B30090AE68 /* main.m */,
@@ -160,9 +224,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C1A73F71197845B30090AE68 /* Build configuration list for PBXNativeTarget "Champion Progress Tracker" */;
 			buildPhases = (
+				7EC7330A27EB41229932F565 /* Check Pods Manifest.lock */,
 				C1A73F3B197845B20090AE68 /* Sources */,
 				C1A73F3C197845B20090AE68 /* Frameworks */,
 				C1A73F3D197845B20090AE68 /* Resources */,
+				A47EB0546BC149BDA69F1204 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -231,6 +297,9 @@
 			files = (
 				C1A73F4F197845B30090AE68 /* InfoPlist.strings in Resources */,
 				C1A73F5A197845B30090AE68 /* Images.xcassets in Resources */,
+				C1A73F8E19785F6D0090AE68 /* file@2x.png in Resources */,
+				C1A73F8C19785F370090AE68 /* file1@2x.png in Resources */,
+				C1A73F7819784C9F0090AE68 /* Storyboard.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -244,13 +313,51 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		7EC7330A27EB41229932F565 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		A47EB0546BC149BDA69F1204 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		C1A73F3B197845B20090AE68 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C1A73FA3197D623E0090AE68 /* PTweekViewController.m in Sources */,
 				C1A73F55197845B30090AE68 /* PTAppDelegate.m in Sources */,
+				C1A73F97197870B80090AE68 /* PTConstants.m in Sources */,
 				C1A73F51197845B30090AE68 /* main.m in Sources */,
+				C1A73F9419786E4A0090AE68 /* PTprofileViewController.m in Sources */,
+				C1E6A45E197DA1E100C14C90 /* PTTableViewController.m in Sources */,
+				C1A73F911978671A0090AE68 /* PTloginViewController.m in Sources */,
 				C1A73F58197845B30090AE68 /* Champion_Progress_Tracker.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -365,6 +472,7 @@
 		};
 		C1A73F72197845B30090AE68 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B9EB086A5420418C9C4BF438 /* Pods.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -378,6 +486,7 @@
 		};
 		C1A73F73197845B30090AE68 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B9EB086A5420418C9C4BF438 /* Pods.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -448,6 +557,7 @@
 				C1A73F73197845B30090AE68 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C1A73F74197845B30090AE68 /* Build configuration list for PBXNativeTarget "Champion Progress TrackerTests" */ = {
 			isa = XCConfigurationList;
@@ -456,6 +566,7 @@
 				C1A73F76197845B30090AE68 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

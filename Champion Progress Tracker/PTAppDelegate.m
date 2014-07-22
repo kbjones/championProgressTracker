@@ -7,6 +7,7 @@
 //
 
 #import "PTAppDelegate.h"
+#import <Parse/Parse.h>
 
 @implementation PTAppDelegate
 
@@ -16,11 +17,40 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+    //self.window = [[UIWindow alloc] initWithFrame:[[UIViewController PTloginViewContoller] bounds]];
     // Override point for customization after application launch.
-    self.window.backgroundColor = [UIColor whiteColor];
-    [self.window makeKeyAndVisible];
+    //self.window.backgroundColor = [UIColor whiteColor];
+    //[self.window makeKeyAndVisible];
+   
+    
+    [Parse setApplicationId:@"NLI8JzYltvEsF4fkwuwHTnd2skRditWKnb1paoDz" clientKey:@"Yu2qzAVHprc28k4UMeOX0DBHi31toFAvzqgI41kj"];
+    
+    [PFFacebookUtils initializeFacebook];
+    //[FBSettings setDefaultAppID: @"684587981616208"];
+    
+  [application registerForRemoteNotificationTypes:
+   UIRemoteNotificationTypeBadge|
+    UIRemoteNotificationTypeAlert|
+   UIRemoteNotificationTypeSound];
+    
     return YES;
+}
+-(BOOL)application:(UIApplication *)application openURL:(NSURL *)url sourceApplication:(NSString *)sourceApplication annotation:(id)annotation
+{
+    return [PFFacebookUtils handleOpenURL:url];
+}
+
+- (void)application:(UIApplication *)application
+didRegisterForRemoteNotificationsWithDeviceToken:(NSData *)deviceToken
+{
+    // Store the deviceToken in the current installation and save it to Parse.
+    PFInstallation *currentInstallation = [PFInstallation currentInstallation];
+    [currentInstallation setDeviceTokenFromData:deviceToken];
+    [currentInstallation saveInBackground];
+}
+
+- (void)application:(UIApplication *)application didReceiveRemoteNotification:(NSDictionary *)userInfo {
+    [PFPush handlePush:userInfo];
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application
