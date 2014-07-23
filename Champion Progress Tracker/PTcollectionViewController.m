@@ -1,19 +1,18 @@
 //
-//  PTweekViewController.m
+//  PTcollectionViewController.m
 //  Champion Progress Tracker
 //
-//  Created by Kalvin Jones on 7/21/14.
+//  Created by Kalvin Jones on 7/22/14.
 //  Copyright (c) 2014 Kalvin Jones. All rights reserved.
 //
 
-#import "PTweekViewController.h"
-#import <MobileCoreServices/UTCoreTypes.h>
+#import "PTcollectionViewController.h"
 
-@interface PTweekViewController ()
+@interface PTcollectionViewController ()
 
 @end
 
-@implementation PTweekViewController
+@implementation PTcollectionViewController
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -24,15 +23,11 @@
     return self;
 }
 
-
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-  // Do any additional setup after loading the view.
-
-#pragma scrollView
-   }
-
+    // Do any additional setup after loading the view.
+}
 
 - (void)didReceiveMemoryWarning
 {
@@ -51,11 +46,4 @@
 }
 */
 
-
-- (IBAction)addPhoto:(UIBarButtonItem *)sender {
-    [self performSegueWithIdentifier:@"toCollection" sender:sender];
-}
-
-- (IBAction)uploadButton:(UIButton *)sender {
-}
 @end

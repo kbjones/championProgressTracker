@@ -150,6 +150,6 @@
 */
 
 - (IBAction)progressTabelBUtton:(UIBarButtonItem *)sender {
-    [self performSegueWithIdentifier:@"toTableViewController" sender:sender];
+    [self performSegueWithIdentifier:@"toGoal" sender:sender];
 }
 @end

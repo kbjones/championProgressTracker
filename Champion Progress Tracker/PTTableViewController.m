@@ -7,6 +7,10 @@
 //
 
 #import "PTTableViewController.h"
+#import "PTcollectionViewController.h"
+#import "PTuserData.h"
+#import "PTTableViewController.h"
+#import "PTweekViewController.h"
 
 @interface PTTableViewController ()
 
@@ -23,15 +27,50 @@
     return self;
 }
 
+-(NSMutableArray*) weeks{
+    if (! _weeks)_weeks= [[NSMutableArray alloc] init];
+    
+    return _weeks;
+    
+}
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    self.tableView.dataSource = self;
+    self.tableView.delegate = self;
+    
+    self.weeks=[[NSMutableArray alloc]init];
+    
+    for (NSMutableDictionary * weeklyData in [PTuserData userProgress])
+    {
+        NSString * personsWeekly = [NSString stringWithFormat:@"%.png", weeklyData[User_Goal_Information]];
+        PTuserData * weekData = [[PTuserData alloc] initWithData: weeklyData andImage:[UIImage imageNamed:personsWeekly]];
+        [self.weeks addObject:weekData];
+                                 
+    }
+}
     
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
     
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
+
+
+-(void) prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+    if ([sender isKindOfClass:[UITableViewCell class]]
+        ) {
+        if ([segue.destinationViewController isKindOfClass:[PTweekViewController class]])
+        {
+            PTweekViewController * nextVC = segue.destinationViewController;
+            NSIndexPath * path = [self.tableView indexPathForCell:sender];
+            PTweekViewController * selectedWeek = self. weeks[path.row];
+            nextVC.userObject = selectedWeek;
+            
+        }
+    }
 }
 
 - (void)didReceiveMemoryWarning
@@ -46,26 +85,30 @@
 {
 #warning Potentially incomplete method implementation.
     // Return the number of sections.
-    return 0;
+    return 1;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
 #warning Incomplete method implementation.
     // Return the number of rows in the section.
-    return 0;
+    return [self. weeks count];
 }
 
-/*
+
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:<#@"reuseIdentifier"#> forIndexPath:indexPath];
+    static NSString * cellIdentifier = @"cell";
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"cell" forIndexPath:indexPath];
     
     // Configure the cell...
-    
+    PTuserData * weekly = [ self. weeks objectAtIndex:indexPath.row];
+    cell.textLabel.text = weekly.week;
+    cell.imageView.image = weekly.personalImage;
+   
     return cell;
 }
-*/
+
 
 /*
 // Override to support conditional editing of the table view.
@@ -115,6 +158,10 @@
     // Pass the selected object to the new view controller.
 }
 */
+
+- (IBAction)GoalViewButton:(UIBarButtonItem *)sender {
+    [self performSegueWithIdentifier:@"backToGoal" sender:sender];
+}
 
 - (IBAction)addWeekButton:(UIBarButtonItem *)sender {
     [self performSegueWithIdentifier:@"toWeekVC" sender:sender];

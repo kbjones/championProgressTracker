@@ -9,6 +9,11 @@
 #import <UIKit/UIKit.h>
 
 @interface PTTableViewController : UITableViewController
+- (IBAction)GoalViewButton:(UIBarButtonItem *)sender;
+
 - (IBAction)addWeekButton:(UIBarButtonItem *)sender;
+@property(strong,nonatomic) NSMutableArray * weeks;
+@property (strong, nonatomic) IBOutlet UILabel *weekLabel;
+
 
 @end

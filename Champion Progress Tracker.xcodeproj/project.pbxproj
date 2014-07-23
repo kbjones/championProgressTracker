@@ -37,6 +37,10 @@
 		C1A73F97197870B80090AE68 /* PTConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = C1A73F96197870B80090AE68 /* PTConstants.m */; };
 		C1A73FA3197D623E0090AE68 /* PTweekViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C1A73FA2197D623E0090AE68 /* PTweekViewController.m */; };
 		C1E6A45E197DA1E100C14C90 /* PTTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C1E6A45D197DA1E100C14C90 /* PTTableViewController.m */; };
+		C1E6A461197EDF3800C14C90 /* PTcollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C1E6A460197EDF3800C14C90 /* PTcollectionViewController.m */; };
+		C1E6A464197EF4D000C14C90 /* PTuserData.m in Sources */ = {isa = PBXBuildFile; fileRef = C1E6A463197EF4D000C14C90 /* PTuserData.m */; };
+		C1E6A467197EFB7B00C14C90 /* PTGoalViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C1E6A466197EFB7B00C14C90 /* PTGoalViewController.m */; };
+		C1E6A46A197EFFFE00C14C90 /* PTgoalInfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C1E6A469197EFFFE00C14C90 /* PTgoalInfoViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -88,6 +92,14 @@
 		C1A73FA2197D623E0090AE68 /* PTweekViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PTweekViewController.m; sourceTree = "<group>"; };
 		C1E6A45C197DA1E100C14C90 /* PTTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PTTableViewController.h; sourceTree = "<group>"; };
 		C1E6A45D197DA1E100C14C90 /* PTTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PTTableViewController.m; sourceTree = "<group>"; };
+		C1E6A45F197EDF3800C14C90 /* PTcollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PTcollectionViewController.h; sourceTree = "<group>"; };
+		C1E6A460197EDF3800C14C90 /* PTcollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PTcollectionViewController.m; sourceTree = "<group>"; };
+		C1E6A462197EF4D000C14C90 /* PTuserData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PTuserData.h; sourceTree = "<group>"; };
+		C1E6A463197EF4D000C14C90 /* PTuserData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PTuserData.m; sourceTree = "<group>"; };
+		C1E6A465197EFB7B00C14C90 /* PTGoalViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PTGoalViewController.h; sourceTree = "<group>"; };
+		C1E6A466197EFB7B00C14C90 /* PTGoalViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PTGoalViewController.m; sourceTree = "<group>"; };
+		C1E6A468197EFFFE00C14C90 /* PTgoalInfoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PTgoalInfoViewController.h; sourceTree = "<group>"; };
+		C1E6A469197EFFFE00C14C90 /* PTgoalInfoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PTgoalInfoViewController.m; sourceTree = "<group>"; };
 		E5AE37FA43214C5E8247DC08 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -169,8 +181,14 @@
 				C1A73F53197845B30090AE68 /* PTAppDelegate.h */,
 				C1A73F54197845B30090AE68 /* PTAppDelegate.m */,
 				C1A73F7719784C9F0090AE68 /* Storyboard.storyboard */,
+				C1E6A468197EFFFE00C14C90 /* PTgoalInfoViewController.h */,
+				C1E6A469197EFFFE00C14C90 /* PTgoalInfoViewController.m */,
+				C1E6A465197EFB7B00C14C90 /* PTGoalViewController.h */,
+				C1E6A466197EFB7B00C14C90 /* PTGoalViewController.m */,
 				C1E6A45C197DA1E100C14C90 /* PTTableViewController.h */,
 				C1E6A45D197DA1E100C14C90 /* PTTableViewController.m */,
+				C1E6A45F197EDF3800C14C90 /* PTcollectionViewController.h */,
+				C1E6A460197EDF3800C14C90 /* PTcollectionViewController.m */,
 				C1A73FA1197D623E0090AE68 /* PTweekViewController.h */,
 				C1A73FA2197D623E0090AE68 /* PTweekViewController.m */,
 				C1A73F8F1978671A0090AE68 /* PTloginViewController.h */,
@@ -189,6 +207,8 @@
 		C1A73F4B197845B30090AE68 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				C1E6A462197EF4D000C14C90 /* PTuserData.h */,
+				C1E6A463197EF4D000C14C90 /* PTuserData.m */,
 				C1A73F8D19785F6D0090AE68 /* file@2x.png */,
 				C1A73F8B19785F370090AE68 /* file1@2x.png */,
 				C1A73F4C197845B30090AE68 /* Champion Progress Tracker-Info.plist */,
@@ -354,9 +374,13 @@
 				C1A73FA3197D623E0090AE68 /* PTweekViewController.m in Sources */,
 				C1A73F55197845B30090AE68 /* PTAppDelegate.m in Sources */,
 				C1A73F97197870B80090AE68 /* PTConstants.m in Sources */,
+				C1E6A46A197EFFFE00C14C90 /* PTgoalInfoViewController.m in Sources */,
 				C1A73F51197845B30090AE68 /* main.m in Sources */,
+				C1E6A464197EF4D000C14C90 /* PTuserData.m in Sources */,
 				C1A73F9419786E4A0090AE68 /* PTprofileViewController.m in Sources */,
+				C1E6A467197EFB7B00C14C90 /* PTGoalViewController.m in Sources */,
 				C1E6A45E197DA1E100C14C90 /* PTTableViewController.m in Sources */,
+				C1E6A461197EDF3800C14C90 /* PTcollectionViewController.m in Sources */,
 				C1A73F911978671A0090AE68 /* PTloginViewController.m in Sources */,
 				C1A73F58197845B30090AE68 /* Champion_Progress_Tracker.xcdatamodeld in Sources */,
 			);
