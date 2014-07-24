@@ -119,6 +119,7 @@
         <!--GoalViewController-->
         <scene sceneID="GqC-KY-dc4">
             <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nFD-mT-mPU" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewController id="MK2-nF-zcy" userLabel="GoalViewController" customClass="PTGoalViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="FVp-9d-LPh"/>
@@ -172,11 +173,10 @@
                     </navigationItem>
                     <connections>
                         <outlet property="fitnessGoalTV" destination="AbI-z3-Y3P" id="d2R-u5-Q4p"/>
-                        <outlet property="tergetWeightTF" destination="WGO-C1-g8e" id="ch5-uW-WoH"/>
+                        <outlet property="targetWeightTF" destination="WGO-C1-g8e" id="DOK-af-c6n"/>
                         <segue destination="0vD-ce-fnu" kind="push" identifier="toGoalInfo" id="8ZF-Il-Axi"/>
                     </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="nFD-mT-mPU" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1223" y="-920"/>
         </scene>
@@ -342,7 +342,7 @@
                     <navigationItem key="navigationItem" id="F8M-cN-RoL">
                         <nil key="title"/>
                         <textField key="titleView" opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Finallized Fitness Goals" borderStyle="roundedRect" minimumFontSize="17" id="5El-ah-v0e">
-                            <rect key="frame" x="73" y="7" width="174" height="30"/>
+                            <rect key="frame" x="8" y="7" width="170" height="30"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                             <color key="textColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>

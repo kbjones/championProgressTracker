@@ -7,6 +7,7 @@
 //
 
 #import "PTGoalViewController.h"
+#import "PTgoalInfoViewController.h"
 
 @interface PTGoalViewController ()
 
@@ -33,6 +34,14 @@
     self.targetWeightTF.text = [NSString stringWithFormat:@"%i",self.Data.userWeight];
     self.fitnessGoalTV.text= self.Data.userGoalInfo;
    
+}
+
+-(void) prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender{
+    if ([segue.destinationViewController isKindOfClass:[PTgoalInfoViewController class]])
+    {
+        PTgoalInfoViewController *goalInfo = segue.destinationViewController;
+        goalInfo.delegate= self;
+    }
 }
 
 

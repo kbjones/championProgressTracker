@@ -8,6 +8,8 @@
 
 #import "PTweekViewController.h"
 #import <MobileCoreServices/UTCoreTypes.h>
+#import "PTuserData.h"
+
 
 @interface PTweekViewController ()
 
@@ -29,9 +31,11 @@
 {
     [super viewDidLoad];
   // Do any additional setup after loading the view.
+    
+    //self. userObject = [[PTweekViewController alloc] initwithData: self.userObject.u
 
-#pragma scrollView
-   }
+
+}
 
 
 - (void)didReceiveMemoryWarning

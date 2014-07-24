@@ -16,5 +16,19 @@
     return self;
 }
 
+-(id)initWithData:(NSDictionary *)data andImage:(UIImage *)image{
+    
+    self = [super init];
+    
+    if(self){
+        
+        self.userWeight = [data[User_Weight] intValue];
+        self.userGoalInfo = data[User_Goal_Information];
+        self.personalImage= data[User_Personal_Photos];
+        
+    }
+    
+    return self;
+}
 
 @end

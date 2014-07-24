@@ -8,6 +8,9 @@
 
 #import <UIKit/UIKit.h>
 
+#define WEEKLY_OBJECTS @"weekly objects"
+
+
 @interface PTTableViewController : UITableViewController
 - (IBAction)GoalViewButton:(UIBarButtonItem *)sender;
 

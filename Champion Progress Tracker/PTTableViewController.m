@@ -41,8 +41,9 @@
     self.tableView.delegate = self;
     
     self.weeks=[[NSMutableArray alloc]init];
+    NSArray *weekArray = [[NSArray alloc]init];
     
-    for (NSMutableDictionary * weeklyData in [PTuserData userProgress])
+    for (NSMutableDictionary * weeklyData in weekArray)
     {
         NSString * personsWeekly = [NSString stringWithFormat:@"%.png", weeklyData[User_Goal_Information]];
         PTuserData * weekData = [[PTuserData alloc] initWithData: weeklyData andImage:[UIImage imageNamed:personsWeekly]];
@@ -67,10 +68,16 @@
             PTweekViewController * nextVC = segue.destinationViewController;
             NSIndexPath * path = [self.tableView indexPathForCell:sender];
             PTweekViewController * selectedWeek = self. weeks[path.row];
-            nextVC.userObject = selectedWeek;
+            nextVC.userInfoObject = selectedWeek;
             
         }
     }
+}
+
+-(void)reorderCells{
+    if (self.tableView.editing == YES)[self.tableView setEditing:NO animated:YES];
+    else [self.tableView setEditing:YES animated:YES];
+    
 }
 
 - (void)didReceiveMemoryWarning

@@ -14,7 +14,7 @@
 @property (strong, nonatomic) IBOutlet UIImageView *userPhoto;
 
 
-@property(strong,nonatomic) PTuserData * userObject;
+@property(strong,nonatomic) PTuserData * userInfoObject;
 
 
 @end

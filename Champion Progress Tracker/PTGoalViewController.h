@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import "PTuserData.h"
+#import "PTgoalInfoViewController.h"
 
 @protocol PTGoalViewControllerDelegate <NSObject>
 
@@ -15,11 +16,11 @@
 
 @end
 
-@interface PTGoalViewController : UIViewController<UITextFieldDelegate,UITextViewDelegate>
+@interface PTGoalViewController : UIViewController<UITextFieldDelegate,UITextViewDelegate,PTGoalViewControllerDelegate,PTgoalInfoViewControllerDelegate>
 @property (strong, nonatomic) IBOutlet UITextField *targetWeightTF;
 @property (strong, nonatomic) IBOutlet UITextView *fitnessGoalTV;
 @property (strong,nonatomic) PTuserData *Data;
 - (IBAction)saveButton:(UIBarButtonItem *)sender;
-@property (weak,nonatomic) id <PTGoalViewControllerDelegate> delegate;
+//@property (weak,nonatomic) id <PTGoalViewControllerDelegate> delegate;
 
 @end
