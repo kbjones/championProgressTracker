@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>77936223-A5A0-451E-9531-7A3022B15A6E</string>
+	<key>IDESourceControlProjectName</key>
+	<string>Champion Progress Tracker</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>8A44825E-E30B-4381-97D3-0C2C82EA2EA4</key>
+		<string>https://github.com/kbjones/championProgressTracker.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>Champion Progress Tracker.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>8A44825E-E30B-4381-97D3-0C2C82EA2EA4</key>
+		<string>..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/kbjones/championProgressTracker.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>8A44825E-E30B-4381-97D3-0C2C82EA2EA4</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>8A44825E-E30B-4381-97D3-0C2C82EA2EA4</string>
+			<key>IDESourceControlWCCName</key>
+			<string>championProgressTracker</string>
+		</dict>
+	</array>
+</dict>
+</plist>

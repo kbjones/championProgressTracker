@@ -7,12 +7,14 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "PTweekViewController.h"
+#import "PTgoalInfoViewController.h"
 
 #define WEEKLY_OBJECTS @"weekly objects"
 
 
-@interface PTTableViewController : UITableViewController
-- (IBAction)GoalViewButton:(UIBarButtonItem *)sender;
+@interface PTTableViewController : UITableViewController<UITableViewDataSource,UITableViewDelegate, PTweekViewControllerDelegate>
+
 
 - (IBAction)addWeekButton:(UIBarButtonItem *)sender;
 @property(strong,nonatomic) NSMutableArray * weeks;

@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		5337AB9B7D4D4856ADEBF424 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E5AE37FA43214C5E8247DC08 /* libPods.a */; };
+		C188C6C31988315700DF9226 /* PTphoto.m in Sources */ = {isa = PBXBuildFile; fileRef = C188C6C21988315700DF9226 /* PTphoto.m */; };
+		C188C6C61988391800DF9226 /* PTDataTrasformer.m in Sources */ = {isa = PBXBuildFile; fileRef = C188C6C51988391800DF9226 /* PTDataTrasformer.m */; };
+		C188C6C91988413E00DF9226 /* PTprogressCollectionCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C188C6C81988413E00DF9226 /* PTprogressCollectionCell.m */; };
+		C188C6CC1988475C00DF9226 /* PTCoreHelp.m in Sources */ = {isa = PBXBuildFile; fileRef = C188C6CB1988475C00DF9226 /* PTCoreHelp.m */; };
 		C1A73F43197845B30090AE68 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C1A73F42197845B20090AE68 /* Foundation.framework */; };
 		C1A73F45197845B30090AE68 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C1A73F44197845B30090AE68 /* CoreGraphics.framework */; };
 		C1A73F47197845B30090AE68 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C1A73F46197845B30090AE68 /* UIKit.framework */; };
@@ -35,12 +39,12 @@
 		C1A73F911978671A0090AE68 /* PTloginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C1A73F901978671A0090AE68 /* PTloginViewController.m */; };
 		C1A73F9419786E4A0090AE68 /* PTprofileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C1A73F9319786E4A0090AE68 /* PTprofileViewController.m */; };
 		C1A73F97197870B80090AE68 /* PTConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = C1A73F96197870B80090AE68 /* PTConstants.m */; };
-		C1A73FA3197D623E0090AE68 /* PTweekViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C1A73FA2197D623E0090AE68 /* PTweekViewController.m */; };
 		C1E6A45E197DA1E100C14C90 /* PTTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C1E6A45D197DA1E100C14C90 /* PTTableViewController.m */; };
 		C1E6A461197EDF3800C14C90 /* PTcollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C1E6A460197EDF3800C14C90 /* PTcollectionViewController.m */; };
 		C1E6A464197EF4D000C14C90 /* PTuserData.m in Sources */ = {isa = PBXBuildFile; fileRef = C1E6A463197EF4D000C14C90 /* PTuserData.m */; };
 		C1E6A467197EFB7B00C14C90 /* PTGoalViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C1E6A466197EFB7B00C14C90 /* PTGoalViewController.m */; };
 		C1E6A46A197EFFFE00C14C90 /* PTgoalInfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C1E6A469197EFFFE00C14C90 /* PTgoalInfoViewController.m */; };
+		C1EC7B261982D8550062EBC8 /* PTweekViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C1EC7B251982D8550062EBC8 /* PTweekViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +59,14 @@
 
 /* Begin PBXFileReference section */
 		B9EB086A5420418C9C4BF438 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
+		C188C6C11988315700DF9226 /* PTphoto.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PTphoto.h; sourceTree = "<group>"; };
+		C188C6C21988315700DF9226 /* PTphoto.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PTphoto.m; sourceTree = "<group>"; };
+		C188C6C41988391800DF9226 /* PTDataTrasformer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PTDataTrasformer.h; sourceTree = "<group>"; };
+		C188C6C51988391800DF9226 /* PTDataTrasformer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PTDataTrasformer.m; sourceTree = "<group>"; };
+		C188C6C71988413E00DF9226 /* PTprogressCollectionCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PTprogressCollectionCell.h; sourceTree = "<group>"; };
+		C188C6C81988413E00DF9226 /* PTprogressCollectionCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PTprogressCollectionCell.m; sourceTree = "<group>"; };
+		C188C6CA1988475C00DF9226 /* PTCoreHelp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PTCoreHelp.h; sourceTree = "<group>"; };
+		C188C6CB1988475C00DF9226 /* PTCoreHelp.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PTCoreHelp.m; sourceTree = "<group>"; };
 		C1A73F3F197845B20090AE68 /* Champion Progress Tracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Champion Progress Tracker.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C1A73F42197845B20090AE68 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		C1A73F44197845B30090AE68 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -88,8 +100,6 @@
 		C1A73F9319786E4A0090AE68 /* PTprofileViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PTprofileViewController.m; sourceTree = "<group>"; };
 		C1A73F95197870B80090AE68 /* PTConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PTConstants.h; sourceTree = "<group>"; };
 		C1A73F96197870B80090AE68 /* PTConstants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PTConstants.m; sourceTree = "<group>"; };
-		C1A73FA1197D623E0090AE68 /* PTweekViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PTweekViewController.h; sourceTree = "<group>"; };
-		C1A73FA2197D623E0090AE68 /* PTweekViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PTweekViewController.m; sourceTree = "<group>"; };
 		C1E6A45C197DA1E100C14C90 /* PTTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PTTableViewController.h; sourceTree = "<group>"; };
 		C1E6A45D197DA1E100C14C90 /* PTTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PTTableViewController.m; sourceTree = "<group>"; };
 		C1E6A45F197EDF3800C14C90 /* PTcollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PTcollectionViewController.h; sourceTree = "<group>"; };
@@ -100,6 +110,8 @@
 		C1E6A466197EFB7B00C14C90 /* PTGoalViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PTGoalViewController.m; sourceTree = "<group>"; };
 		C1E6A468197EFFFE00C14C90 /* PTgoalInfoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PTgoalInfoViewController.h; sourceTree = "<group>"; };
 		C1E6A469197EFFFE00C14C90 /* PTgoalInfoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PTgoalInfoViewController.m; sourceTree = "<group>"; };
+		C1EC7B241982D84E0062EBC8 /* PTweekViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PTweekViewController.h; sourceTree = "<group>"; };
+		C1EC7B251982D8550062EBC8 /* PTweekViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PTweekViewController.m; sourceTree = "<group>"; };
 		E5AE37FA43214C5E8247DC08 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -189,9 +201,13 @@
 				C1E6A45D197DA1E100C14C90 /* PTTableViewController.m */,
 				C1E6A45F197EDF3800C14C90 /* PTcollectionViewController.h */,
 				C1E6A460197EDF3800C14C90 /* PTcollectionViewController.m */,
-				C1A73FA1197D623E0090AE68 /* PTweekViewController.h */,
-				C1A73FA2197D623E0090AE68 /* PTweekViewController.m */,
+				C188C6CA1988475C00DF9226 /* PTCoreHelp.h */,
+				C188C6CB1988475C00DF9226 /* PTCoreHelp.m */,
+				C188C6C71988413E00DF9226 /* PTprogressCollectionCell.h */,
+				C188C6C81988413E00DF9226 /* PTprogressCollectionCell.m */,
 				C1A73F8F1978671A0090AE68 /* PTloginViewController.h */,
+				C1EC7B241982D84E0062EBC8 /* PTweekViewController.h */,
+				C1EC7B251982D8550062EBC8 /* PTweekViewController.m */,
 				C1A73F901978671A0090AE68 /* PTloginViewController.m */,
 				C1A73F9219786E4A0090AE68 /* PTprofileViewController.h */,
 				C1A73F9319786E4A0090AE68 /* PTprofileViewController.m */,
@@ -207,6 +223,10 @@
 		C1A73F4B197845B30090AE68 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				C188C6C11988315700DF9226 /* PTphoto.h */,
+				C188C6C21988315700DF9226 /* PTphoto.m */,
+				C188C6C41988391800DF9226 /* PTDataTrasformer.h */,
+				C188C6C51988391800DF9226 /* PTDataTrasformer.m */,
 				C1E6A462197EF4D000C14C90 /* PTuserData.h */,
 				C1E6A463197EF4D000C14C90 /* PTuserData.m */,
 				C1A73F8D19785F6D0090AE68 /* file@2x.png */,
@@ -371,16 +391,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C1A73FA3197D623E0090AE68 /* PTweekViewController.m in Sources */,
+				C1EC7B261982D8550062EBC8 /* PTweekViewController.m in Sources */,
 				C1A73F55197845B30090AE68 /* PTAppDelegate.m in Sources */,
+				C188C6C91988413E00DF9226 /* PTprogressCollectionCell.m in Sources */,
 				C1A73F97197870B80090AE68 /* PTConstants.m in Sources */,
 				C1E6A46A197EFFFE00C14C90 /* PTgoalInfoViewController.m in Sources */,
+				C188C6C61988391800DF9226 /* PTDataTrasformer.m in Sources */,
 				C1A73F51197845B30090AE68 /* main.m in Sources */,
 				C1E6A464197EF4D000C14C90 /* PTuserData.m in Sources */,
 				C1A73F9419786E4A0090AE68 /* PTprofileViewController.m in Sources */,
 				C1E6A467197EFB7B00C14C90 /* PTGoalViewController.m in Sources */,
+				C188C6C31988315700DF9226 /* PTphoto.m in Sources */,
 				C1E6A45E197DA1E100C14C90 /* PTTableViewController.m in Sources */,
 				C1E6A461197EDF3800C14C90 /* PTcollectionViewController.m in Sources */,
+				C188C6CC1988475C00DF9226 /* PTCoreHelp.m in Sources */,
 				C1A73F911978671A0090AE68 /* PTloginViewController.m in Sources */,
 				C1A73F58197845B30090AE68 /* Champion_Progress_Tracker.xcdatamodeld in Sources */,
 			);

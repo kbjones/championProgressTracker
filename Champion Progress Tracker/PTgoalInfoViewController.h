@@ -7,6 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "PTuserData.h"
+//#import "PTGoalViewController.h"
+
 
 @protocol PTgoalInfoViewControllerDelegate <NSObject>
 
@@ -14,10 +17,15 @@
 
 @end
 
-@interface PTgoalInfoViewController : UIViewController
+@interface PTgoalInfoViewController : UIViewController <UITextFieldDelegate,UITextViewDelegate>
 - (IBAction)doneButton:(UIBarButtonItem *)sender;
 - (IBAction)backToTable:(UIButton *)sender;
+@property (strong, nonatomic) IBOutlet UILabel *targetWeightFLabel;
+@property (strong, nonatomic) IBOutlet UILabel *taregetFitnessGoal;
 @property(weak,nonatomic) id <PTgoalInfoViewControllerDelegate> delegate;
+@property(strong,nonatomic) PTuserData *finalData;
+@property (strong, nonatomic) NSMutableArray *goals;
+
 
 
 

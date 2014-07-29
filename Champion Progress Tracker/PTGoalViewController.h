@@ -12,15 +12,15 @@
 
 @protocol PTGoalViewControllerDelegate <NSObject>
 
--(void) didSaveGoal;
+-(void) didAddGoal:(PTuserData*)data;
 
 @end
 
-@interface PTGoalViewController : UIViewController<UITextFieldDelegate,UITextViewDelegate,PTGoalViewControllerDelegate,PTgoalInfoViewControllerDelegate>
+@interface PTGoalViewController : UIViewController<UITextFieldDelegate,UITextViewDelegate,PTgoalInfoViewControllerDelegate>
 @property (strong, nonatomic) IBOutlet UITextField *targetWeightTF;
 @property (strong, nonatomic) IBOutlet UITextView *fitnessGoalTV;
-@property (strong,nonatomic) PTuserData *Data;
+@property (strong,nonatomic) PTuserData *goalData;
 - (IBAction)saveButton:(UIBarButtonItem *)sender;
-//@property (weak,nonatomic) id <PTGoalViewControllerDelegate> delegate;
+@property (weak,nonatomic) id <PTGoalViewControllerDelegate> delegate;
 
 @end

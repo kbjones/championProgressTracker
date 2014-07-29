@@ -22,9 +22,16 @@
     
     if(self){
         
-        self.userWeight = [data[User_Weight] intValue];
-        self.userGoalInfo = data[User_Goal_Information];
+        self.targetWeight = [data[User_Target_Weight] intValue];
+        self.targetGoal = data[User_Target_Goal_Information];
         self.personalImage= data[User_Personal_Photos];
+        self.mondayInfo=data[Monday_Info];
+        self.tuesdayInfo=data[Tuesday_Info];
+        self.wednesdayInfo=data[Wednesday_Info];
+        self.thursdayInfo = data[Thursday_Info];
+        self.fridayInfo=data[Friday_Info];
+        self.saturdayInfo=data[Saturday_Info];
+        self.sundayInfo=data[Sunday_Info];
         
     }
     
